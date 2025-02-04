@@ -15,10 +15,10 @@
             return uniqueArray;
         }
 
-        let array = [1, 2, 2, 3, 4, 4, 5];
-        let result = removeDuplicates(array);
+        let inputArray = prompt("Enter array elements separated by commas:").split(",").map(Number);
+        let result = removeDuplicates(inputArray);
 
-        alert("Original array: " + array.join(", "));
+        alert("Original array: " + inputArray.join(", "));
         alert("Array without duplicates: " + result.join(", "));
     </script>
 </body>
